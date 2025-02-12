@@ -1,37 +1,39 @@
-import Header from "./Components/Header/Header"
 import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="h-screen">
-      <Header />
+    <div className="h-screen lg:mt-16  ">
 
-      {/* Main Section */}
+      {/* MAIN SECTION */}
+      <div className="flex flex-col justify-center items-center lg:flex-row gap-10 lg:justify-between mx-auto ">
+        {/* Left side  */}
+        <div className=" mx-auto flex flex-col justify-center items-center gap-10 text-center lg:items-start lg:text-left lg:justify-start mt-32 lg:mt-[182px] ">
+          <div >
+            <h1 className="font-bold text-2xl  font-serif text-[#000000] md:text-[40px] md:leading-[65.8px] ">
+              IMPECCABLE <br /> CRAFTSMANSHIP AND <br /> FINESSE
+            </h1>
+          </div>
+          <div>
+            <p className="font-medium text-lg md:text-[30px] text-[#787054] md:leading-[49.35px] ">
+              An example of intricate workmanship and detail, elegant <br /> necklaces and long and short chains form a part of our <br /> desirable collection.
+            </p>
+          </div>
 
-      <div className="flex ">
-
-        {/* LEFT SIDE */}
-        <div className="w-1/2 flex flex-col  justify-center items-start  m-12 gap-10 ">
-
-          <h1 className="font-serif font-bold text-[40px] text-black 
-          w-[496px]  top-[120px] pl-44 ">IMPECCABLE CRAFTSMANSHIP AND FINESSE</h1>
-
-          <p className="font-medium text-[30px] leading-[49.35px] tracking-[2.5%] text-[#787054]  w-[902px] h-[147px] pl-44">
-            An example of intricate workmanship and detail, elegant <br /> necklaces and long and short chains form a part of our <br /> desirable collection.</p>
-
-          <div className="pl-44">
-            <button className="rounded-[10px] gap-[10px] p-[10px] bg-[#A29875] w-[288px] h-fit-[58px] text-white font-serif font-medium text-[30px] top-[730px]  ">Explore Now</button>
+          <div>
+            <button className="bg-[#A29875] rounded-[10px] w-72 h-[58px] gap-[10px] p-[10px] text-2xl top-[730px]" >
+              Explore Now
+            </button>
           </div>
         </div>
 
-
-        {/* RIGHT SIDE  */}
-        <div className="w-1/2 flex justify-center items-center mt-24 ">
+        {/* Right Side */}
+        <div className="mx-auto flex justify-center items-center mt-16 ">
           <Image
             src={"/images/rs-group-wrap ⏵ rs-group.svg"}
-            alt="Home Page Image of a girl"
-            width={462}
-            height={647}
+            alt="Main Section Picture"
+            width={300}
+            height={300}
+            className="md:w-[462px] lg:h-[647px]"
           />
         </div>
       </div>
