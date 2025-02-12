@@ -9,7 +9,7 @@ export default function Home() {
         {/* Left side  */}
         <div className=" mx-auto flex flex-col justify-center items-center gap-10 text-center lg:items-start lg:text-left lg:justify-start mt-32 lg:mt-[182px] ">
           <div >
-            <h1 className="font-bold text-2xl  font-serif text-[#000000] md:text-[40px] md:leading-[65.8px] ">
+            <h1 className="font-bold text-2xl  font-serif text-[#000000] dark:text-white md:text-[40px] md:leading-[65.8px] ">
               IMPECCABLE <br /> CRAFTSMANSHIP AND <br /> FINESSE
             </h1>
           </div>
